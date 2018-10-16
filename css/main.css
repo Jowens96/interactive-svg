@@ -1,31 +1,26 @@
-.bear {
-  width: 300px;
-}
-
 #left-ear, #right-ear {
-  transform: rotate(0deg);
-  transform-origin: top;
   transition: all .25s linear;
 }
 
-.bear:hover #left-ear {
-  transform: rotate(5deg);
-}
-
+.bear:hover #left-ear,
 .bear:hover #right-ear {
-  transform: rotate(-5deg);
+  transform: translateY(10px);
 }
 
 #left-eye, #right-eye {
-  transform: rotate(0deg);
-  transform-origin: bottom;
   transition: all .25s linear;
 }
 
-.bear:hover #left-eye {
-  transform: rotate(2deg);
+.bear:hover #left-eye,
+.bear:hover #right-eye {
+  transform: translateX(10px);
 }
 
-.bear:hover #right-eye {
-  transform: rotate(2deg);
+@@keyframes eyes-move {
+  0% {
+    transform: translateY(0);
+  }
+  0% {
+    transform: translateY(10px);
+  }
 }
