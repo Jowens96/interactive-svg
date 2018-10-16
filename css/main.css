@@ -1,0 +1,31 @@
+.bear {
+  width: 300px;
+}
+
+#left-ear, #right-ear {
+  transform: rotate(0deg);
+  transform-origin: top;
+  transition: all .25s linear;
+}
+
+.bear:hover #left-ear {
+  transform: rotate(5deg);
+}
+
+.bear:hover #right-ear {
+  transform: rotate(-5deg);
+}
+
+#left-eye, #right-eye {
+  transform: rotate(0deg);
+  transform-origin: bottom;
+  transition: all .25s linear;
+}
+
+.bear:hover #left-eye {
+  transform: rotate(2deg);
+}
+
+.bear:hover #right-eye {
+  transform: rotate(2deg);
+}
