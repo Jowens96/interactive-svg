@@ -8,19 +8,17 @@
 }
 
 #left-eye, #right-eye {
-  transition: all .25s linear;
+  animation: eyes-move 1s ease infinite alternate;
 }
 
-.bear:hover #left-eye,
-.bear:hover #right-eye {
-  transform: translateX(10px);
-}
+@keyframes eyes-move {
 
-@@keyframes eyes-move {
   0% {
-    transform: translateY(0);
+    transform: translateX(0);
   }
+
   0% {
-    transform: translateY(10px);
+    transform: translateX(10px);
   }
+
 }
